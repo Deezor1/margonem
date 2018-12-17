@@ -1,0 +1,151 @@
+body{
+  background-color: #004F00 !important;
+  text-align: center;
+}
+.tooltip-inner {
+    max-width: 350px !important;
+}
+.c{
+  color: yellow;
+  margin: 0;
+  text-align: left !important;
+}
+.m{
+  text-align: left !important;
+  margin: 0;
+}
+.h{
+  color: #2090FE;
+  margin: 0;
+  font-weight: bold;
+}
+.back{
+  border: 2px solid white;
+  width: 100px !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline;
+  margin: 3px;
+  transition: .2s;
+}
+.back:hover{
+  background-color: #017501;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+  -moz-filter: drop-shadow(0px 0px 5px #ffffff);
+}
+a{
+  position: relative;
+  text-decoration: none !important;
+  color: white !important;
+  width: 100px;
+  display: inline;
+}
+a:hover, a:focus{
+  color: white !important;
+}
+#demo {
+    background: url(https://deezor1.github.io/margonem/shop-outfit.png);
+    image-rendering: pixelated;
+    width: 473px;
+    height: 435px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+h4{
+  text-align: center;
+  color: white !important;
+}
+.pannica{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/postacie/paid/g18-k2.gif);
+  width: 128px;
+  height: 192px;
+  left: 310px;
+  top: 115px;
+  display: none;
+  transition: 1s;
+}
+.krasnal{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/postacie/paid/g18-m2.gif);
+  width: 128px;
+  height: 192px;
+  left: 310px;
+  top: 115px;
+  display: none;
+}
+.dama{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/postacie/paid/g18-k3.gif);
+  width: 128px;
+  height: 192px;
+  left: 310px;
+  top: 115px;
+  display: none;
+}
+.wyznawca{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/postacie/paid/g18-m1.gif);
+  width: 128px;
+  height: 192px;
+  left: 310px;
+  top: 115px;
+  display: none;
+}
+.kaktus{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/postacie/paid/g18-out.gif);
+  width: 128px;
+  height: 192px;
+  left: 310px;
+  top: 115px;
+  display: none;
+}
+.b1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/out/g18-itemk2.gif), url(https://deezor1.github.io/margonem/her.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 10px;
+  cursor: pointer;
+}
+.b2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/out/g18-itemm2.gif), url(https://deezor1.github.io/margonem/her.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 41px;
+  top: 10px;
+  cursor: pointer;
+}
+.b1-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/out/g18-itemk3.gif), url(https://deezor1.github.io/margonem/her.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 43px;
+  cursor: pointer;
+}
+.b2-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/out/g18-itemm1.gif), url(https://deezor1.github.io/margonem/her.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 41px;
+  top: 43px;
+  cursor: pointer;
+}
+.b1-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/out/g18-itemout.gif), url(https://deezor1.github.io/margonem/her.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 76px;
+  cursor: pointer;
+}

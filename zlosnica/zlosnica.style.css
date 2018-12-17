@@ -1,0 +1,206 @@
+body{
+  background-color: #004F00 !important;
+  text-align: center;
+}
+h4{
+  text-align: center;
+  color: white !important;
+  padding: 0;
+}
+#demo {
+    background: url(https://deezor1.github.io/margonem/map.png) no-repeat center center;
+    image-rendering: pixelated;
+    height: 505px;
+    width: 468px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+.back{
+  border: 2px solid white;
+  width: 100px !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline;
+  margin: 3px;
+  transition: .2s;
+  position: relative;
+  z-index: 1;
+}
+.back:hover{
+  background-color: #017501;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+  -moz-filter: drop-shadow(0px 0px 5px #ffffff);
+}
+a{
+  position: relative;
+  text-decoration: none !important;
+  color: white !important;
+  width: 100px;
+  display: inline;
+}
+a:hover, a:focus{
+  color: white !important;
+}
+.resp-dg{
+  position: absolute;
+  top: 0px;
+  left: 319px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 25px;
+}
+.resp-rr{
+  position: absolute;
+  top: 0px;
+  left: 356px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 25px;
+}
+.resp-tf{
+  position: absolute;
+  top: 24px;
+  left: 319px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 26px;
+}
+.resp-wo{
+  position: absolute;
+  top: 0px;
+  left: 393px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 25px;
+}
+.resp-zz{
+  position: absolute;
+  top: 24px;
+  left: 282px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 26px;
+}
+.resp-oco{
+  position: absolute;
+  top: 327px;
+  left: 307px;
+  background-color: rgba(0,255,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 38px;
+  cursor: pointer;
+}
+.resp-ing{
+  position: absolute;
+  top: 480px;
+  left: 37px;
+  background-color: rgba(0,255,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 25px;
+  cursor: pointer;
+}
+.resp-gh{
+  position: absolute;
+  top: 257px;
+  left: 196px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 39px;
+  height: 27px;
+}
+.resp-pv{
+  position: absolute;
+  top: 208px;
+  left: 196px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 39px;
+  height: 27px;
+}
+.resp-ggp{
+  position: absolute;
+  top: 257px;
+  left: 234px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 37px;
+  height: 27px;
+}
+.resp-ss{
+  position: absolute;
+  top: 208px;
+  left: 234px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 39px;
+  height: 27px;
+}
+.resp-bsa{
+  position: absolute;
+  top: 257px;
+  left: 270px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 27px;
+}
+.resp-pg{
+  position: absolute;
+  top: 417px;
+  left: 343px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 25px;
+}
+.resp-jw{
+  position: absolute;
+  top: 417px;
+  left: 380px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 25px;
+}
+.resp-lz{
+  position: absolute;
+  top: 441px;
+  left: 380px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 26px;
+}
+.resp-at{
+  position: absolute;
+  top: 441px;
+  left: 343px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 26px;
+}
+.alert{
+  height: 505px;
+  width: 468px;
+  position: absolute;
+  display: none;
+}
+.close{
+  position: absolute;
+  left: 430px;
+}
+.tooltip {
+    position: relative;
+    z-index: 22;
+}

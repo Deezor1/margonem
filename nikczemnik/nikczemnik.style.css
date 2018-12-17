@@ -1,0 +1,262 @@
+body{
+  background-color: #004F00 !important;
+  text-align: center;
+}
+h4{
+  text-align: center;
+  color: white !important;
+  padding: 0;
+}
+#demo {
+    background: url(https://deezor1.github.io/margonem/map.png) no-repeat center center;
+    image-rendering: pixelated;
+    height: 505px;
+    width: 468px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+.back{
+  border: 2px solid white;
+  width: 100px !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline;
+  margin: 3px;
+  transition: .2s;
+  position: relative;
+  z-index: 1;
+}
+.back:hover{
+  background-color: #017501;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+  -moz-filter: drop-shadow(0px 0px 5px #ffffff);
+}
+a{
+  position: relative;
+  text-decoration: none !important;
+  color: white !important;
+  width: 100px;
+  display: inline;
+}
+a:hover, a:active{
+  color: white !important;
+}
+.resp-gz{
+  position: absolute;
+  top: 159px;
+  left: 111px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 38px;
+}
+.resp-zr{
+  position: absolute;
+  top: 196px;
+  left: 111px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 38px;
+}
+.resp-wo{
+  position: absolute;
+  top: 159px;
+  left: 136px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 38px;
+}
+.resp-kst{
+  position: absolute;
+  top: 196px;
+  left: 136px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 26px;
+}
+.resp-ksz{
+  position: absolute;
+  top: 196px;
+  left: 160px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 26px;
+}
+.resp-cb{
+  position: absolute;
+  top: 233px;
+  left: 111px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 38px;
+}
+.resp-ld{
+  position: absolute;
+  top: 270px;
+  left: 111px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 37px;
+}
+.resp-zb{
+  position: absolute;
+  top: 282px;
+  left: 74px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 25px;
+}
+.resp-wg{
+  position: absolute;
+  top: 171px;
+  left: 368px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 26px;
+}
+.resp-dr{
+  position: absolute;
+  top: 170px;
+  left: 344px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 38px;
+}
+.resp-pl{
+  position: absolute;
+  top: 135px;
+  left: 344px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 36px;
+}
+.resp-og{
+  position: absolute;
+  top: 98px;
+  left: 344px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 38px;
+}
+.resp-m{
+  position: absolute;
+  top: 207px;
+  left: 344px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 26px;
+}
+.resp-fe{
+  position: absolute;
+  top: 232px;
+  left: 344px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 39px;
+}
+.resp-skt{
+  position: absolute;
+  top: 245px;
+  left: 368px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 37px;
+}
+.resp-swk{
+  position: absolute;
+  top: 281px;
+  left: 368px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 39px;
+}
+.resp-sp{
+  position: absolute;
+  top: 269px;
+  left: 318px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 27px;
+  height: 26px;
+}
+.resp-zj{
+  position: absolute;
+  top: 269px;
+  left: 295px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 24px;
+  height: 38px;
+}
+.resp-sw{
+  position: absolute;
+  top: 281px;
+  left: 270px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 26px;
+}
+.resp-zt{
+  position: absolute;
+  top: 159px;
+  left: 294px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 27px;
+}
+.resp-ob{
+  position: absolute;
+  top: 159px;
+  left: 319px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 27px;
+}
+.resp-nj{
+  position: absolute;
+  top: 185px;
+  left: 294px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 26px;
+  height: 25px;
+}
+.resp-mp{
+  position: absolute;
+  top: 185px;
+  left: 270px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+}
+.resp-zs{
+  position: absolute;
+  top: 159px;
+  left: 257px;
+  background-color: rgba(255,0,0,.7);
+  border: 1px solid black;
+  width: 38px;
+  height: 27px;
+}

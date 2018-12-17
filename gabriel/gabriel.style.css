@@ -1,0 +1,271 @@
+body{
+  background-color: #004F00 !important;
+  text-align: center;
+}
+.tooltip-inner {
+    max-width: 350px !important;
+}
+.c{
+  color: yellow;
+  margin: 0;
+  text-align: left !important;
+}
+.m{
+  text-align: left !important;
+  margin: 0;
+}
+.back{
+  border: 2px solid white;
+  width: 100px !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline;
+  margin: 3px;
+  transition: .2s;
+}
+.back:hover{
+  background-color: #017501;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+  -moz-filter: drop-shadow(0px 0px 5px #ffffff);
+}
+a{
+  position: relative;
+  text-decoration: none !important;
+  color: white !important;
+  width: 100px;
+  display: inline;
+}
+a:hover, a:focus{
+  color: white !important;
+}
+#demo {
+    background: url(gabriel.png);
+    image-rendering: pixelated;
+    width: 473px;
+    height: 435px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+h4{
+  text-align: center;
+  color: white !important;
+}
+.b1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-1bombka-m.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 9px;
+  top: 9px;
+}
+.b2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-2bombka-a.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 42px;
+  top: 9px;
+}
+.b3{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-3bombka-r.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 75px;
+  top: 9px;
+}
+.b4{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-4bombka-g.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 108px;
+  top: 9px;
+}
+.b5{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-5bombka-o.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 141px;
+  top: 9px;
+}
+.b6{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-6bombka-n.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 174px;
+  top: 9px;
+}
+.b7{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-7bombka-e.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 207px;
+  top: 9px;
+}
+.b8{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-8bombka-m2.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 240px;
+  top: 9px;
+}
+.b1-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-1bombka-m.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 9px;
+  top: 42px;
+}
+.b2-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-2bombka-a.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 42px;
+  top: 42px;
+}
+.b3-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-3bombka-r.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 75px;
+  top: 42px;
+}
+.b4-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-4bombka-g.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 108px;
+  top: 42px;
+}
+.b5-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-5bombka-o.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 141px;
+  top: 42px;
+}
+.b6-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-6bombka-n.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 174px;
+  top: 42px;
+}
+.b7-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-7bombka-e.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 207px;
+  top: 42px;
+}
+.b8-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-8bombka-m2.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 240px;
+  top: 42px;
+}
+.b1-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-1bombka-m.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 9px;
+  top: 75px;
+}
+.b2-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-2bombka-a.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 42px;
+  top: 75px;
+}
+.b3-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-3bombka-r.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 75px;
+  top: 75px;
+}
+.b4-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-4bombka-g.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 108px;
+  top: 75px;
+}
+.b5-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-5bombka-o.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 141px;
+  top: 75px;
+}
+.b6-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-6bombka-n.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 174px;
+  top: 75px;
+}
+.b7-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-7bombka-e.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 207px;
+  top: 75px;
+}
+.b8-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-8bombka-m2.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 240px;
+  top: 75px;
+}
+.b1-3{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-bomb-szysz.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 9px;
+  top: 108px;
+}
+.b2-3{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-bomb-choi.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 42px;
+  top: 108px;
+}
+.b3-3{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g17-bomb-sniezka.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 75px;
+  top: 108px;
+}

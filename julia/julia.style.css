@@ -1,0 +1,134 @@
+body{
+  background-color: #004F00 !important;
+  text-align: center;
+}
+.tooltip-inner {
+    max-width: 350px !important;
+}
+.c{
+  color: yellow;
+  margin: 0;
+  text-align: left !important;
+}
+.m{
+  text-align: left !important;
+  margin: 0;
+}
+.u{
+  color: yellow;
+  margin: 0;
+  font-weight: bold;
+}
+.un{
+  color: #DAA520;
+  margin: 0;
+  font-weight: bold;
+}
+.l{
+  color: #FA9A20;
+  margin: 0;
+  font-weight: bold;
+}
+.back{
+  border: 2px solid white;
+  width: 100px !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline;
+  margin: 3px;
+  transition: .2s;
+}
+.back:hover{
+  background-color: #017501;
+  filter: drop-shadow(0px 0px 5px #ffffff);
+  -webkit-filter: drop-shadow(0px 0px 5px #ffffff);
+  -moz-filter: drop-shadow(0px 0px 5px #ffffff);
+}
+a{
+  position: relative;
+  text-decoration: none !important;
+  color: white !important;
+  width: 100px;
+  display: inline;
+}
+a:hover, a:active{
+  color: white !important;
+}
+#demo {
+    background: url(https://deezor1.github.io/margonem/sl.png);
+    image-rendering: pixelated;
+    width: 473px;
+    height: 435px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+h4{
+  text-align: center;
+  color: white !important;
+}
+.b1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/bag/lot-szkatulka3.gif), url(https://deezor1.github.io/margonem/upg.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 10px;
+}
+.b2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/bag/lot-szkatulka2.gif), url(https://deezor1.github.io/margonem/leg.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 41px;
+  top: 10px;
+}
+.b1-1{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g18_dzwonek.gif), url(https://deezor1.github.io/margonem/upg.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 43px;
+}
+.b1-2{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/pap/kuponna1.gif), url(https://deezor1.github.io/margonem/uni.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 76px;
+}
+.b1-3{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/pap/kuponna2.gif), url(https://deezor1.github.io/margonem/uni.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 109px;
+}
+.b1-4{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/pap/zap_impreza.gif), url(https://deezor1.github.io/margonem/uni.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 142px;
+}
+.b1-5{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/pap/kuponna3.gif), url(https://deezor1.github.io/margonem/uni.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 175px;
+}
+.b1-6{
+  position: absolute;
+  background: url(https://www.margonem.pl/obrazki/itemy/eve/g18-wyzwanie.gif), url(https://deezor1.github.io/margonem/upg.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 8px;
+  top: 208px;
+}
