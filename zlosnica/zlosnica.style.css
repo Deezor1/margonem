@@ -195,12 +195,9 @@ a:hover, a:focus{
   width: 468px;
   position: absolute;
   display: none;
+  margin-bottom: 0px !important;
 }
 .close{
   position: absolute;
   left: 430px;
-}
-.tooltip {
-    position: relative;
-    z-index: 22;
 }
