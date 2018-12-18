@@ -121,6 +121,15 @@ small{
   font-size: 8px;
 }
 @media only screen and (max-width: 1081px) {
+  .bell{
+    display: none;
+  }
+  h1{
+    font-size: 150px;
+  }
+  h3{
+    font-size: 100px;
+  }
   .hero{
     display: block;
     padding: 16px;
@@ -135,6 +144,7 @@ small{
     transition: .2s;
   }
   .bernadetta, .julia, .jakub, .oliwia, .author, .dealer{
+    font-size: 100px !important;
     display: block;
     padding: 16px;
     position: relative;
@@ -143,11 +153,15 @@ small{
     text-align: center;
     line-height: normal;
     width: 100% !important;
+    height: 300px;
     border-radius: 0px;
     margin: 0px;
     transition: .2s;
   }
   .image{
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
     display: block;
     position: relative;
     left: auto;
@@ -155,7 +169,10 @@ small{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
     text-align: center;
+    z-index: auto;
   }
   .tooltip{
     display: none !important;
