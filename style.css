@@ -3,6 +3,10 @@ body{
   color: white !important;
   text-align: center;
 }
+.event-ended{
+  font-size: 50px;
+  color: red;
+}
 .dealer{
   position: relative;
   border: 2px solid white;
