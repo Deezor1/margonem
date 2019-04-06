@@ -28,9 +28,10 @@
             c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + '</u>';});
             c = c.replace(/\n/g, (match, a1, a2) => {return ' <br> ';});
             c = c.replace(/\[center\](.+?)\[\/center\]/g, (match, a1) => {return '<center>' + a1 + '</center>';});
-            c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return '<code>' + a1 + '</code>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
+            c = c.replace(/\[code\]/g, (match, a1) => {return '<code>';});
+            c = c.replace(/\[\/code\]/g, (match, a1) => {return '</code>';});
+            c = c.replace(/\[cytat\]/g, (match, a1) => {return '<blockquote>';});
+            c = c.replace(/\[\/cytat\]/g, (match, a1) => {return '</blockquote>';});
             //Emotki
             c = c.replace(/(?=http)(.+?)(?= )|(?=http)(.+?)($)/g, '<a href="$&">$&</a>');
             c = c.replace(/ ;\)\)\)/g, () => {return ' <img src="http://www.margonem.pl/obrazki/emots/lol.gif">';});
