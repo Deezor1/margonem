@@ -16,7 +16,7 @@
         but.appendChild(t);
         b.appendChild(but);
         const d = document.createElement('div');
-        d.style.cssText = 'width: auto; height: auto; text-align: left; margin-bottom: 20px;';
+        d.style.cssText = 'text-align: left; margin-bottom: 20px;';
         b.appendChild(d);
         but.addEventListener('click', (e) => {
             e.preventDefault();
