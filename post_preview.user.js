@@ -7,11 +7,12 @@
 // ==/UserScript==
 
 (() => {
-    const a = document.getElementsByTagName('center');
+    const a = document.querySelectorAll('center');
     const b = a[a.length-5];
     if(b.innerHTML.indexOf("i") == 1){
         const but = document.createElement("button");
         but.style.cssText = 'width: 200px; height: 30px';
+        but.id = 'postPrev';
         const t = document.createTextNode('Podgląd postu');
         but.appendChild(t);
         b.appendChild(but);
@@ -34,8 +35,8 @@
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
             c = c.replace(/\[center\]/g, '<center>');
             c = c.replace(/\[\/center\]/g, '</center>');
-            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + ' </strong>';});
-            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + ' </strong>';});
+            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + '</strong>';});
+            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + '</strong>';});
             c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + ' </em>';});
             c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + ' </em>';});
             c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + ' </u>';});
