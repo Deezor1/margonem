@@ -27,7 +27,7 @@
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return '<code>' + a1 + ' </code>';});
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return '<code>' + a1 + ' </code>';});
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return '<code>' + a1 + ' </code>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});//sorry za kod, ale podejrzewam, że tak samo jest napisane forum (działa po 5 razy) xD
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});//¯\_(ツ)_/¯
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
@@ -37,7 +37,7 @@
             c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + ' </strong>';});
             c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + ' </strong>';});
             c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + ' </em>';});
-            c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + ' </em>';});   //<--- to zresztą też dziwnie działa ¯\_(ツ)_/¯
+            c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + ' </em>';});
             c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + ' </u>';});
             c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + ' </u>';});
             c = c.replace(/http:\/\/.*?.margonem.pl\/obrazki\/npc\/(.+?)(?= )/g, (match, a1) => {return '<img src="/obrazki/npc/' + a1 + '">';});
