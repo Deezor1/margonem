@@ -23,7 +23,6 @@
         bu.addEventListener('click', (e) => {
             e.preventDefault();
             let c = document.getElementById('content').value;
-
             c = c.replace(/\n/g, ' <br>');
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return ' <code>' + a1 + ' </code>';});
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
