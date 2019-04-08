@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Podgląd postu na forum
-// @version      0.1
+// @version      0.2
 // @author       Deezor
+// @updateURL    https://deezor1.github.io/margonem/post_preview.js
 // @match        https://www.margonem.pl/?task=forum&show=posts&id=*
 // ==/UserScript==
 
@@ -22,20 +23,22 @@
         bu.addEventListener('click', (e) => {
             e.preventDefault();
             let c = document.getElementById('content').value;
-            //BBCode
-            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return ' <strong>' + a1 + ' </strong>';});
-            c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return ' <em>' + a1 + ' </em>';});
-            c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return ' <u>' + a1 + ' </u>';});
-            c = c.replace(/\n/g, ' <br> ');
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});//sorry za kod, ale podejrzewam, że tak samo jest napisane forum xD
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
+            c = c.replace(/\n/g, ' <br>');
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return ' <code>' + a1 + ' </code>';});
-            c = c.replace(/\[center\]/g, ' <center>');
-            c = c.replace(/\[\/center\]/g, ' </center>');
-            //Emotki
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});     //sorry za kod, ale podejrzewam, że tak samo jest napisane forum xD
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
+
+            c = c.replace(/\[center\]/g, ' <center> ');
+            c = c.replace(/\[\/center\]/g, ' </center> ');
+            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + '</strong>';});
+            c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + '</strong>';});
+            c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + '</em>';});
+            c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + '</em>';});   //<--- to zresztą też ¯\_(ツ)_/¯
+            c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + '</u>';});
+            c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + '</u>';});
             c = c.replace(/(?=http:\/\/)(.+?)(?= )|(?=http:\/\/)(.+?)$|(?=https:\/\/)(.+?)(?= )|(?=https:\/\/)(.+?)$/g, ' <a href="$&" target="_blank">$&</a>');
             c = c.replace(/ ;\)\)\)/g, ' <img src="http://www.margonem.pl/obrazki/emots/lol.gif">');
             c = c.replace(/ ;\)/g, ' <img src="http://www.margonem.pl/obrazki/emots/wink.gif">');
