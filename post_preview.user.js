@@ -12,8 +12,7 @@
     if(b.innerHTML.indexOf("i") == 1){
         const but = document.createElement("button");
         but.style.cssText = 'width: 200px; height: 30px';
-        const t = document.createTextNode('Podgląd postu');
-        but.appendChild(t);
+        but.appendChild(document.createTextNode('Podgląd postu'));
         b.appendChild(but);
         const d = document.createElement('div');
         d.style.cssText = 'text-align: left; margin-bottom: 20px;';
