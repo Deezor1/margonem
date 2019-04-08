@@ -23,22 +23,24 @@
         bu.addEventListener('click', (e) => {
             e.preventDefault();
             let c = document.getElementById('content').value;
+
             c = c.replace(/\n/g, ' <br>');
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return ' <code>' + a1 + ' </code>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});     //sorry za kod, ale podejrzewam, że tak samo jest napisane forum xD
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return ' <blockquote>' + a1 + ' </blockquote>';});
-
-            c = c.replace(/\[center\]/g, ' <center> ');
-            c = c.replace(/\[\/center\]/g, ' </center> ');
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});     //sorry za kod, ale podejrzewam, że tak samo jest napisane forum xD
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
+            c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + '</blockquote>';});
+            c = c.replace(/\[center\]/g, ' <center>');
+            c = c.replace(/\[\/center\]/g, ' </center>');
             c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + '</strong>';});
             c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return '<strong>' + a1 + '</strong>';});
             c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + '</em>';});
             c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return '<em>' + a1 + '</em>';});   //<--- to zresztą też ¯\_(ツ)_/¯
             c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + '</u>';});
             c = c.replace(/\[u\](.+?)\[\/u\]/g, (match, a1) => {return '<u>' + a1 + '</u>';});
+            c = c.replace(/http:\/\/www.margonem.pl\/obrazki\/npc\/(.+?) /g, (match, a1) => {return '<img src="Http://www.margonem.pl/obrazki/npc/' + a1 + '">';});
+            c = c.replace(/http:\/\/www.margonem.pl\/obrazki\/npc\/(.+?)$/g, (match, a1) => {return '<img src="Http://www.margonem.pl/obrazki/npc/' + a1 + '">';});
             c = c.replace(/(?=http:\/\/)(.+?)(?= )|(?=http:\/\/)(.+?)$|(?=https:\/\/)(.+?)(?= )|(?=https:\/\/)(.+?)$/g, ' <a href="$&" target="_blank">$&</a>');
             c = c.replace(/ ;\)\)\)/g, ' <img src="http://www.margonem.pl/obrazki/emots/lol.gif">');
             c = c.replace(/ ;\)/g, ' <img src="http://www.margonem.pl/obrazki/emots/wink.gif">');
@@ -66,7 +68,7 @@
             c = c.replace(/ :\]| ;\]/g, ' <img src="http://www.margonem.pl/obrazki/emots/smirk.gif">');
             c = c.replace(/ :\*| ;\*/g, ' <img src="http://www.margonem.pl/obrazki/emots/kiss.gif">');
             c = c.replace(/ :rotfl/g, ' <img src="http://www.margonem.pl/obrazki/emots/rotfl.gif">');
-            c = c.replace(/ITEM#(.+?)(?= )|ITEM#(.+?)($)|ITEM#(.+?)(?=\<)/g, ' <img src="https://i.imgur.com/0eOUPIz.png" align="left">');
+            c = c.replace(/ITEM#.+?(?= )|ITEM#.+?($)/g, '<img src="https://i.imgur.com/0eOUPIz.png" align="left">');
             d.innerHTML = c;
         });
     }
