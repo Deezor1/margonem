@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Podgląd postu na forum
-// @version      0.1
+// @version      0.2
 // @author       Deezor
 // @updateURL    https://deezor1.github.io/margonem/post_preview.user.js
 // @match        https://www.margonem.pl/?task=forum&show=posts&id=*
@@ -31,8 +31,7 @@
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
             c = c.replace(/\[cytat\](.+?)\[\/cytat\]/g, (match, a1) => {return '<blockquote>' + a1 + ' </blockquote>';});
-            c = c.replace(/\[center\]/g, '<center>');
-            c = c.replace(/\[\/center\]/g, '</center>');
+            c = c.replace(/\[center\](.+?)\[\/center\]/g, (match, a1) => {return '<center>' + a1 + ' </center>';});
             c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return ' <strong>' + a1 + ' </strong>';});
             c = c.replace(/\[b\](.+?)\[\/b\]/g, (match, a1) => {return ' <strong>' + a1 + ' </strong>';});
             c = c.replace(/\[i\](.+?)\[\/i\]/g, (match, a1) => {return ' <em>' + a1 + ' </em>';});
