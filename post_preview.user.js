@@ -1,15 +1,17 @@
 // ==UserScript==
 // @name         Podgląd postu na forum
-// @version      0.2
+// @version      0.2.1
 // @author       Deezor
 // @updateURL    https://deezor1.github.io/margonem/post_preview.user.js
 // @match        https://www.margonem.pl/?task=forum&show=posts&id=*
+// @match        https://www.margonem.pl/?task=forum&show=editp&id=*
 // ==/UserScript==
 
 (() => {
-    const a = document.querySelectorAll('center');
-    const b = a[a.length-5];
-    if(b.innerHTML.indexOf("i") == 1){
+    let a = document.querySelectorAll('center');
+    let b = a[a.length-5];
+    b = b == null ? b = a[2] : b;
+    if(b.innerHTML.indexOf("i") == 1 || b.innerHTML.indexOf("f") == 6){
         const but = document.createElement("button");
         but.style.cssText = 'width: 200px; height: 30px';
         but.appendChild(document.createTextNode('Podgląd postu'));
@@ -19,7 +21,9 @@
         b.appendChild(d);
         but.addEventListener('click', (e) => {
             e.preventDefault();
-            let c = document.querySelector('#content').value;
+            let c = null;
+            c = document.querySelector('#content') != null ? c = document.querySelector('#content').value : c;
+            c = document.querySelectorAll('textarea')[0].id !== 'content' ? c = document.querySelectorAll('textarea')[0].value : c;
             c = c.replace(/\n/g, ' <br>');
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return '<code>' + a1 + ' </code>';});
             c = c.replace(/\[code\](.+?)\[\/code\]/g, (match, a1) => {return '<code>' + a1 + ' </code>';});
