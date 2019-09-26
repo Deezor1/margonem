@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name         Podgląd postu na forum
 // @version      0.2.1
-// @author       Deezor
-// @updateURL    https://deezor1.github.io/margonem/post_preview.user.js
+// @author       Deez
 // @match        https://www.margonem.pl/?task=forum&show=posts&id=*
 // @match        https://www.margonem.pl/?task=forum&show=editp&id=*
 // ==/UserScript==
