@@ -176,7 +176,7 @@ const lookForFavItems = () => {
             });
             item.childNodes[1].appendChild(nImage);
           } catch (err) {
-            message("Klikasz za szybko lub masz lagi!");
+            message("Klikasz za szybko lub masz wolne połączenie internetowe!");
           }
         }
       });
